@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:id="@+id/mainActivity">
+
+    <EditText
+        android:text=""
+        android:hint="Enter Total Amt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPreTip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick=""/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn10"
+        android:text="@string/btnStr10"
+        android:layout_alignLeft="@+id/etPreTip"
+        android:layout_below="@+id/etPreTip"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn15"
+        android:text="@string/btnStr15"
+        android:layout_toRightOf="@+id/btn10"
+        android:layout_marginLeft="10dp"
+        android:onClick="onClick"
+        android:layout_alignTop="@+id/btn10"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn20"
+        android:text="@string/btnStr20"
+        android:onClick="onClick"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/btn15"
+        android:layout_alignTop="@id/btn10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/tvFinalTotal" />
+
+</RelativeLayout>
